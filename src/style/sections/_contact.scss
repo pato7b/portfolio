@@ -1,0 +1,61 @@
+#contact {
+  background: linear-gradient(
+    270deg,
+    #344a68 1.88%,
+    $gradient-color 100%,
+    $gradient-color2 100%
+  );
+
+  
+  margin-top: -10rem;
+  margin-bottom: -1px;
+  color: $white-color;
+
+  @include respond(tab-land) {
+    padding: 10rem 0;
+    clip-path: none;
+    margin-top: 0;
+    -webkit-clip-path: none;
+
+    
+  }
+
+  .form-section Form {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      width: 40%;
+      height: 30px;
+      padding: 2rem;
+
+      @include respond(tab-port) {
+        width: 80%;    
+      }
+      
+    }
+    textarea {
+      width: 40%;
+      @include respond(tab-port) {
+        width: 80%;    
+      }
+    }
+
+    button {
+      border: none;
+      width: 40%;
+      padding: 2rem;
+      margin-top: 2rem;
+      background: rgb(60, 118, 148);
+      color: white;
+      &:focus {
+        background: rgb(51, 105, 107);
+      }
+      @include respond(tab-port) {
+        width: 80%;    
+      }
+    }
+  }
+}
